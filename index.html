@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bar</title>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="logo">
+            <img src="./img/Cópia de IMG_1512.PNG" alt="" />
+          </div>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="nav nav-pills navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#inicio">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cardapio">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+      <div class="container">
+        <section id="inicio">
+          <div
+            id="carousel-exemplo"
+            class="carousel carousel-fade slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div data-bs-interval="3000" class="carousel-item active">
+                <img
+                  src="https://coolicias.com.br/wp-content/uploads/2023/06/Feijao-tropeiro-mineiro-scaled-optimized.jpeg"
+                  alt="Tropeiro"
+                  class="img-fluid"
+                />
+                <div class="carousel-caption prato-dia">
+                  <h3>Feijão Tropeiro</h3>
+                  <p>Segunda-Feira</p>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img
+                  src="https://terratavares.com/hf-conteudo/uploads/posts/2021/01/2530_imagem-2021-01-26-094408-png.png"
+                  alt="Frango com quiabo"
+                  class="img-fluid"
+                />
+                <div class="carousel-caption prato-dia">
+                  <h3>Frango com quiabo</h3>
+                  <p>Terça-Feira</p>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item active">
+                <img
+                  src="https://costela.com.br/wp-content/uploads/2016/06/RABADA-COM-PIR%C3%83O-DE-FARINHA-DE-MANDIOCA-1520x856.jpg"
+                  alt="Rabada com batata e arroz"
+                  class="img-fluid"
+                />
+                <div class="carousel-caption prato-dia">
+                  <h3>Rabada com Batata</h3>
+                  <p>Quarta-Feira</p>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item active">
+                <img
+                  src="https://www.minhareceita.com.br/app/uploads/2021/03/frango-caipira-2-1280x480.jpg"
+                  alt="Galinhada"
+                  class="img-fluid"
+                />
+                <div class="carousel-caption prato-dia">
+                  <h3>Galinhada</h3>
+                  <p>Quinta-Feira</p>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item active">
+                <img
+                  src="https://i.pinimg.com/736x/45/52/cc/4552cc0d0732600091f4146e034c84e4.jpg"
+                  alt="Feijão Branco com Dobradinha"
+                  class="img-fluid"
+                />
+                <div class="carousel-caption prato-dia">
+                  <h3>Feijão Branco com Dobradinha</h3>
+                  <p>Sexta-Feira</p>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item active">
+                <img
+                  src="https://istoe.com.br/wp-content/uploads/2022/06/feij.jpg"
+                  alt="Feijoada"
+                  class="img-fluid"
+                />
+                <div class="carousel-caption prato-dia">
+                  <h3>Feijoada</h3>
+                  <p>Sábado</p>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img
+                  src="https://coolicias.com.br/wp-content/uploads/2023/06/Feijao-tropeiro-mineiro-scaled-optimized.jpeg"
+                  alt="Tropeiro"
+                  class="img-fluid"
+                />
+                <div class="carousel-caption prato-dia">
+                  <h3>Tropeiro</h3>
+                  <p>Domingo</p>
+                </div>
+              </div>
+            </div>
+            <button
+              data-bs-target="#carousel-exemplo"
+              data-bs-slide="prev"
+              class="carousel-control-prev"
+              type="button"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              data-bs-target="#carousel-exemplo"
+              data-bs-slide="next"
+              class="carousel-control-next"
+              type="button"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="6"
+              ></button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="cardapio">
+        <div class="container">
+          <h2>Cardápio</h2>
+          <nav class="nav nav-tabs">
+            <button
+              data-bs-toggle="tab"
+              data-bs-target="#bebidas"
+              class="nav-link active"
+              type="button"
+            >
+              Bebidas
+            </button>
+            <button
+              data-bs-toggle="tab"
+              data-bs-target="#porcoes"
+              class="nav-link"
+              type="button"
+            >
+              Porções
+            </button>
+            <button
+              data-bs-toggle="tab"
+              data-bs-target="#pratos"
+              class="nav-link"
+              type="button"
+            >
+              Pratos
+            </button>
+          </nav>
+          <div class="tab-content">
+            <div class="tab-pane active" id="bebidas">
+              <div class="container">
+                <nav class="nav nav-tabs">
+                  <button
+                    data-bs-toggle="tab"
+                    data-bs-target="#cerveja"
+                    class="nav-link active"
+                    type="button"
+                  >
+                    Cerveja
+                  </button>
+                  <button
+                    data-bs-toggle="tab"
+                    data-bs-target="#destilados"
+                    class="nav-link"
+                    type="button"
+                  >
+                    Destilados
+                  </button>
+                  <button
+                    data-bs-toggle="tab"
+                    data-bs-target="#refrigerantes"
+                    class="nav-link"
+                    type="button"
+                  >
+                    Refrigerantes
+                  </button>
+                </nav>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="cerveja">
+                    <!-- Conteúdo da cerveja -->
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img
+                            src="https://carrefourbrfood.vtexassets.com/arquivos/ids/73164374/cerveja-stella-artois-garrafa-600ml-1.jpg?v=637982623369600000"
+                            alt="Cerveja Stella"
+                            class="card-img-top"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Stella 600ml</h5>
+                            <p class="card-text">R$12,00</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img
+                            src="https://cdn.formulaexpress.com.br/img/p/1/9/7/197-large_default.jpg"
+                            alt="Cerveja Brahma"
+                            class="card-img-top"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Brahma 600ml</h5>
+                            <p class="card-text">R$9,00</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img
+                            src="https://images.tcdn.com.br/img/img_prod/948333/skol_600ml_37_1_12a4127719a4fca37c057f1e7808d4bc.png"
+                            alt="Cerveja Skol"
+                            class="card-img-top"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Skol 600ml</h5>
+                            <p class="card-text">R$9,00</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img
+                            src="https://samsclub.vtexassets.com/arquivos/ids/156503/Cerveja-Lager-Heineken-600ml.jpg?v=637430324500400000"
+                            class="card-img-top"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Heineken 600ml</h5>
+                            <p class="card-text">R$14,90</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="destilados">
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img
+                            src="https://images.tcdn.com.br/img/img_prod/902185/salinas_tradicional_700ml_87_1_cfe478672c69bbe6645376698ab7ff4f.jpg"
+                            alt="Salinas"
+                            class="card-img-top"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Salinas Dose</h5>
+                            <p class="card-text">R$6,00</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img
+                            src="https://images.tcdn.com.br/img/img_prod/902185/cachaca_seleta_700ml_3_1_0815762e0ca19fb50dd96f466f7c02f1.jpeg"
+                            alt="Seleta"
+                            class="card-img-top"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Seleta Dose</h5>
+                            <p class="card-text">R$6,00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="refrigerantes">
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img
+                            src="https://img.irroba.com.br/filters:fill(fff):quality(80)/bebfesta/catalog/produtos/teste/coca-cola-beb-festa.jpg"
+                            alt="Coca-cola"
+                            class="card-img-top"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Coca-Cola 2 Litros</h5>
+                            <p class="card-text">R$13,90</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img
+                            src="https://cdn.awsli.com.br/2500x2500/1847/1847175/produto/94341736/379fb1048a.jpg"
+                            alt="Guaraná Antartica 2Litros"
+                            class="card-img-top"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              Guaraná Antartica 2Litros
+                            </h5>
+                            <p class="card-text">R$10,00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="porcoes">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      src="https://i.ytimg.com/vi/_B5h4m5QO44/maxresdefault.jpg"
+                      alt="Contra-Filé com Fritas"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Contra-Filé com Fritas</h5>
+                      <p class="card-text">R$59,90</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      src="https://img.cybercook.com.br/receitas/896/carne-de-sol-com-mandioca.jpeg"
+                      alt="carne de sol com mandioca"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Carne de sol com Mandioca
+                      </h5>
+                      <p class="card-text">R$59,90</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="pratos">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      src="https://s2.glbimg.com/M25hkvRZ8WKe4_6ajzNmuR-NaIg=/620x455/e.glbimg.com/og/ed/f/original/2022/08/11/receita-tropeiro-boi-lombo-linguica-feijao-couve-pimenta-jaime-ferreira-boi-vitorio.jpg"
+                      alt="Tropeiro"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Tropeiro</h5>
+                      <p class="card-text">R$15,90</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      src="https://www.nossoclube.com.br/arquivos/feijoada.jpg"
+                      alt="Feijoada"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Feijoada
+                      </h5>
+                      <p class="card-text">R$15,90</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+      </section>
+    </div>
+    <script src="./libs/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
